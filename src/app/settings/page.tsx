@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import BackButton from '@/components/BackButton';
 
 export default function Settings() {
   const [apiKey, setApiKey] = useState('');
@@ -25,6 +26,8 @@ export default function Settings() {
 
       {/* Content */}
       <div className="max-w-2xl mx-auto px-6 py-12">
+        <BackButton />
+
         {/* OpenAI API Key */}
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 mb-8">
           <h2 className="text-2xl font-bold mb-6">�� AI Tutor Setup</h2>

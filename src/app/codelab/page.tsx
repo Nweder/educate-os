@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import BackButton from '@/components/BackButton';
 
 export default function CodeLab() {
   const [language, setLanguage] = useState<'python' | 'csharp'>('python');
@@ -82,6 +83,7 @@ class Program
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
       <div className="max-w-7xl mx-auto">
+        <BackButton />
         <h1 className="text-4xl font-bold mb-8">📝 Code Lab</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

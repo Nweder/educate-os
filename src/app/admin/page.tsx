@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 import { User } from '@/types';
 
 interface Submission {
@@ -114,6 +115,13 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Back Button */}
+      <div className="border-b border-gray-800 p-6 bg-gray-950">
+        <div className="max-w-7xl mx-auto">
+          <BackButton />
+        </div>
+      </div>
+
       {/* Navigation */}
       <nav className="border-b border-gray-800 p-6 bg-gray-950">
         <div className="max-w-7xl mx-auto flex justify-between items-center">

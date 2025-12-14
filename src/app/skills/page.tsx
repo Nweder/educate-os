@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import BackButton from '@/components/BackButton';
 
 const skillCategories = {
   'fundamentals': [
@@ -41,6 +42,8 @@ export default function Skills() {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
+        <BackButton />
+
         {/* Overall Progress */}
         <div className="mb-12 bg-gray-800 border border-gray-700 rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-4">Overall Proficiency</h2>

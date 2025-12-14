@@ -363,3 +363,4 @@ After deployment, consider:
 
 Happy learning! 🚀
 
+# educate-os

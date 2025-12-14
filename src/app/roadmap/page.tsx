@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import BackButton from '@/components/BackButton';
 
 const days = [
   { day: 1, title: 'OOP Foundations', difficulty: 'beginner', completed: false },
@@ -36,6 +37,8 @@ export default function Roadmap() {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
+        <BackButton />
+
         {/* Progress */}
         <div className="mb-12 bg-gray-800 border border-gray-700 rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-4">Your Progress</h2>

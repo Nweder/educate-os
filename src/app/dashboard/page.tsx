@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 import { User } from '@/types';
 
 export default function DashboardPage() {
@@ -56,6 +57,11 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Back Button */}
+      <div className="max-w-6xl mx-auto px-4 pt-4 pb-2">
+        <BackButton />
+      </div>
+
       {/* Navigation */}
       <nav className="border-b border-gray-800 p-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
