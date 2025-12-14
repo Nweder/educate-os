@@ -82,21 +82,21 @@ class Program
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <BackButton />
-        <h1 className="text-4xl font-bold mb-8">📝 Code Lab</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">📝 Code Lab</h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {/* Editor */}
           <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-bold">Editor</h2>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
+              <h2 className="text-xl sm:text-2xl font-bold">Editor</h2>
               <select
                 value={language}
                 onChange={(e) =>
                   setLanguage(e.target.value as 'python' | 'csharp')
                 }
-                className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white"
+                className="w-full sm:w-auto bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white text-sm"
               >
                 <option value="python">Python 3</option>
                 <option value="csharp">C# (.NET)</option>
@@ -113,7 +113,7 @@ class Program
             <button
               onClick={handleRun}
               disabled={loading}
-              className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white font-bold py-2 px-4 rounded"
+              className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white font-bold py-3 sm:py-2 px-4 rounded text-sm sm:text-base"
             >
               {loading ? '⏳ Running...' : '▶ Run Code'}
             </button>
@@ -121,10 +121,10 @@ class Program
 
           {/* Output */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Output</h2>
+            <h2 className="text-xl sm:text-2xl font-bold">Output</h2>
 
-            <div className="bg-gray-800 border border-gray-700 rounded p-4 h-96 overflow-auto">
-              <pre className="text-sm font-mono text-green-400 whitespace-pre-wrap">
+            <div className="bg-gray-800 border border-gray-700 rounded p-4 h-64 sm:h-96 overflow-auto">
+              <pre className="text-xs sm:text-sm font-mono text-green-400 whitespace-pre-wrap">
                 {output || '(output will appear here)'}
               </pre>
             </div>

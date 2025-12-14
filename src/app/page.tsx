@@ -6,19 +6,19 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="border-b border-gray-800 p-6">
+      <nav className="border-b border-gray-800 p-4 sm:p-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">🎓 EduPath OS</div>
-          <div className="space-x-2 md:space-x-4 flex items-center">
+          <div className="text-xl sm:text-2xl font-bold">🎓 EduPath OS</div>
+          <div className="space-x-1 sm:space-x-2 md:space-x-4 flex items-center flex-wrap justify-end gap-1 sm:gap-2">
             <Link
               href="/dashboard"
-              className="px-4 py-2 rounded bg-gray-800 hover:bg-gray-700 text-sm md:text-base"
+              className="px-2 sm:px-4 py-2 rounded bg-gray-800 hover:bg-gray-700 text-xs sm:text-sm md:text-base"
             >
               Dashboard
             </Link>
             <Link
               href="/codelab"
-              className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm md:text-base"
+              className="px-2 sm:px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-xs sm:text-sm md:text-base"
             >
               Code Lab
             </Link>
@@ -41,39 +41,39 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-6 py-32 text-center">
-        <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-32 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
           Education Operating System
         </h1>
-        <p className="text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-2xl text-gray-400 mb-6 sm:mb-8 max-w-2xl mx-auto">
           Master backend development with structured roadmaps, AI guidance, and code-first learning
         </p>
 
-        <div className="space-y-4 mb-12">
-          <p className="text-lg text-gray-500">
+        <div className="space-y-2 sm:space-y-4 mb-8 sm:mb-12">
+          <p className="text-sm sm:text-base md:text-lg text-gray-500">
             ✨ Choose your language: Python 3 or C#<br />
             🤖 AI tutor provides hints, not solutions<br />
             📊 Track skills with proof-based evidence<br />
-            �� 30-day comprehensive curriculum
+            🗺️ 30-day comprehensive curriculum
           </p>
         </div>
 
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-2 sm:gap-4 justify-center flex-wrap">
           <Link
             href="/register"
-            className="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-lg text-xl font-bold"
+            className="px-4 sm:px-8 py-2 sm:py-4 bg-green-600 hover:bg-green-700 rounded-lg text-sm sm:text-lg md:text-xl font-bold"
           >
             Create Account →
           </Link>
           <Link
             href="/login"
-            className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-xl font-bold"
+            className="px-4 sm:px-8 py-2 sm:py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm sm:text-lg md:text-xl font-bold"
           >
             Log In
           </Link>
           <Link
             href="/roadmap"
-            className="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg text-xl font-bold"
+            className="px-4 sm:px-8 py-2 sm:py-4 bg-gray-800 hover:bg-gray-700 rounded-lg text-sm sm:text-lg md:text-xl font-bold"
           >
             View Roadmap
           </Link>
@@ -81,8 +81,8 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-gray-900 border border-gray-800 rounded-lg p-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 sm:p-8">
           <div className="text-4xl mb-4">💻</div>
           <h3 className="text-xl font-bold mb-3">Live Code Editor</h3>
           <p className="text-gray-400">

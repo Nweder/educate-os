@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { seedDatabase } from "@/lib/db/seed";
 
 export const metadata: Metadata = {
   title: "EduPath OS - Backend Learning Platform",
   description: "Master backend development with structured roadmaps, AI guidance, and code-first learning",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 // Seed database on startup

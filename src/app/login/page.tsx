@@ -62,9 +62,9 @@ export default function LoginPage() {
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">🎓 EduPath OS</h1>
-          <h2 className="text-2xl font-bold">Log In</h2>
-          <p className="text-gray-400 mt-2">Continue your learning journey</p>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2">🎓 EduPath OS</h1>
+          <h2 className="text-xl sm:text-2xl font-bold">Log In</h2>
+          <p className="text-gray-400 mt-2 text-sm sm:text-base">Continue your learning journey</p>
         </div>
 
         {/* Form */}
@@ -77,7 +77,7 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
           </div>
@@ -90,14 +90,14 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
           </div>
 
           {/* Error Message */}
           {error && (
-            <div className="p-3 bg-red-900 border border-red-700 rounded-lg text-red-200">
+            <div className="p-3 bg-red-900 border border-red-700 rounded-lg text-red-200 text-sm">
               {error}
             </div>
           )}
@@ -106,7 +106,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 rounded-lg font-bold transition"
+            className="w-full py-3 sm:py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 rounded-lg font-bold transition text-base"
           >
             {loading ? 'Logging in...' : 'Log In'}
           </button>
@@ -114,7 +114,7 @@ export default function LoginPage() {
 
         {/* Register Link */}
         <div className="text-center mt-6">
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-sm sm:text-base">
             Don't have an account?{' '}
             <Link href="/register" className="text-blue-400 hover:text-blue-300 font-bold">
               Create one

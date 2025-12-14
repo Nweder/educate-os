@@ -60,15 +60,15 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
+      <div className="w-full max-w-md max-h-screen overflow-y-auto py-4">
         {/* Back Button */}
         <BackButton />
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">🎓 EduPath OS</h1>
-          <h2 className="text-2xl font-bold">Create Account</h2>
-          <p className="text-gray-400 mt-2">Start your learning journey today</p>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2">🎓 EduPath OS</h1>
+          <h2 className="text-xl sm:text-2xl font-bold">Create Account</h2>
+          <p className="text-gray-400 mt-2 text-sm sm:text-base">Start your learning journey today</p>
         </div>
 
         {/* Form */}
@@ -81,7 +81,7 @@ export default function RegisterPage() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Username (3+ chars, no spaces)"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
             <p className="text-xs text-gray-500 mt-1">Letters and numbers only, 3+ characters</p>
@@ -95,7 +95,7 @@ export default function RegisterPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
           </div>
@@ -108,7 +108,7 @@ export default function RegisterPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
             <p className="text-xs text-gray-500 mt-1">4+ characters, letters and numbers only</p>
@@ -122,7 +122,7 @@ export default function RegisterPage() {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 sm:py-2 bg-gray-900 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-base"
               disabled={loading}
             />
           </div>
