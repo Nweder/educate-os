@@ -1,0 +1,41 @@
+COPYRIGHT NOTICE
+================
+
+EduPath OS
+Copyright © 2025 EduPath OS Contributors. All rights reserved.
+
+This software is protected by copyright law and is licensed under the MIT License.
+See the LICENSE file in this repository for complete license details.
+
+INTELLECTUAL PROPERTY
+=====================
+
+The following are the intellectual property of EduPath OS Contributors:
+- Source code in /src directory
+- Database schema and initialization
+- Documentation files
+- AI tutoring system
+- Code execution runners
+- UI/UX design and components
+- Educational curriculum and roadmaps
+
+USAGE RIGHTS
+============
+
+Under the MIT License, you are granted permission to:
+- Use this software for personal, educational, or commercial purposes
+- Modify the source code
+- Distribute copies of the software
+- Include this software in your projects
+
+CONDITIONS
+==========
+
+You must:
+- Include a copy of the MIT License and this copyright notice in any distribution
+- State changes you made to the code
+- NOT hold the authors liable for any issues
+
+For commercial use or inquiries, contact: EduPath OS Contributors
+
+For more information, visit: https://github.com/Nweder/educate-os

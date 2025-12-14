@@ -359,8 +359,28 @@ After deployment, consider:
 
 ---
 
+## 📜 License & Copyright
+
+**EduPath OS** is licensed under the **MIT License**.
+
+Copyright © 2025 EduPath OS Contributors. All rights reserved.
+
+This software is protected by copyright law. See [LICENSE](./LICENSE) and [COPYING](./COPYING) files for details.
+
+### Usage Rights
+- ✅ Free for personal, educational, or commercial use
+- ✅ You can modify and distribute under MIT terms
+- ✅ Attribution appreciated but not required
+
+### Conditions
+- Include the license notice in distributions
+- No warranty is provided
+- Authors are not liable for any issues
+
+For more information, visit: https://github.com/Nweder/educate-os
+
+---
+
 **Built with ❤️ for backend developers** — Master fundamentals, prove skills, advance careers.
 
 Happy learning! 🚀
-
-# educate-os
