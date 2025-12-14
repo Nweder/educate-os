@@ -1,0 +1,37 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "nodeVersion": "20.x",
+  "env": {
+    "JWT_SECRET": {
+      "description": "Secret key for JWT token generation. Change this to a secure random string in production."
+    },
+    "ADMIN_EMAIL": {
+      "description": "Email for the admin account that will be created on first deployment"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Password for the admin account that will be created on first deployment"
+    },
+    "NEXT_PUBLIC_API_URL": {
+      "description": "Public API URL (will be your Vercel domain)"
+    }
+  },
+  "functions": {
+    "src/app/api/**": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}

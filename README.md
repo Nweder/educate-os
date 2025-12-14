@@ -270,12 +270,50 @@ npm run lint      # Lint code
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Deploy to Vercel (Recommended) ⭐
+
+Vercel is the easiest way to deploy EduPath OS with full functionality!
+
+**What You Get:**
+- ✅ Public URL (share with anyone)
+- ✅ Auto-deploy from GitHub
+- ✅ All features working (auth, database, code execution)
+- ✅ Free tier (no credit card needed)
+- ✅ Easy domain setup when ready
+
+**Quick Deploy (5 minutes):**
+1. Go to [vercel.com](https://vercel.com)
+2. Sign up with GitHub
+3. Import `educate-os` repository
+4. Add environment variables (see below)
+5. Click Deploy ✅
+
+**See detailed guide:** [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### Environment Variables for Vercel
+
+Set these in Vercel dashboard under "Environment Variables":
+
 ```bash
-vercel
+JWT_SECRET=your-super-secret-jwt-key-change-in-production
+ADMIN_EMAIL=admin@edupath.local
+ADMIN_PASSWORD=admin123
+NEXT_PUBLIC_API_URL=https://your-project.vercel.app
 ```
 
+### Custom Domain
+
+Once deployed and working:
+1. Buy domain (Namecheap, GoDaddy, etc.) - ~$10-15/year
+2. In Vercel: Projects → Settings → Domains
+3. Add your domain
+4. Update DNS records (Vercel shows instructions)
+5. ✅ Your domain is live!
+
+**Your code doesn't change!** Only the URL changes from `vercel.app` to your domain.
+
 ### Docker
+
 ```dockerfile
 FROM node:18
 WORKDIR /app
